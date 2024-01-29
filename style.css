@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    transition: 0.2s linear;
+}
+
+#nav {
+    display: flex;
+    margin: 0 12px 0 0;
+    height: 40px;
+    justify-content: space-between;
+}
+
+#nav img {
+    margin-top: 12px;
+    margin-left: 8%;
+}
+
+.nav-list {
+    display: flex;
+    margin-top: 12px;
+    margin-right: 12%;
+}
+
+#unoder-list {
+    display: flex;
+
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+}
+
+#singUp {
+    margin-left: 75%;
+    display: flex;
+    gap: 8px;
+    height: 24px;
+}
+
+
+/* here start dark-mode */
+
+
+.dark-mode {
+    margin-left: 12px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background: #111;
+    height: 26px;
+    width: 50px;
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+
+}
+
+.ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: 0.2s linear;
+
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+body.dark {
+    background-color: #292c35;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: #292c35;
+    color: white;
+}
+
+
+
+#form {
+    width: 300px;
+    margin: 5vh auto 0 auto;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+#form button:hover {
+    background-color: yellow;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.password {
+    margin-top: 8px;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: none;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+/* here is start login part */

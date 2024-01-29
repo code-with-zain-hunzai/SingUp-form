@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>website</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <img src="img/north nine.svg" alt="">
+        <div class="nav-list">
+            <ul id="unoder-list">
+                <li><a>Home</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+                <li><a>Services</a></li>
+            </ul>
+            <div class="dark-mode">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <i class="moon fas fa-moon"></i>
+                    <i class="sun fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="username">username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="username" type="username">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">password</label>
+                <input id="password" name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="">password again</label>
+                <input id="password-again" name="password-again" type="password">
+                <div class="error"></div>
+            </div>
+            <button type="submit">SingUp</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
